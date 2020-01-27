@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-public class Hand implements Comparable<Hand>, Iterable<Hand> {
+public class Hand implements Comparable<Hand>, Iterable<Card> {
     private List<Card> hand = new ArrayList<>();
     private int cap;
 
@@ -53,7 +53,7 @@ public class Hand implements Comparable<Hand>, Iterable<Hand> {
     }
 
     @Override
-    public Iterator<Hand> iterator() {
-        return new HandIterator(hList);
+    public Iterator<Card> iterator() {
+        return hand.iterator();
     }
 }
