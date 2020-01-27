@@ -1,6 +1,5 @@
 package ca.mcgill.cs.stg.solitaire.cards;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class test {
@@ -16,7 +15,9 @@ public class test {
         List<Hand> l = new ArrayList<>();
         l.add(h1);
         l.add(h2);
-        Collections.sort(l);
+        l.sort(new UniversalComparator(UniversalComparator.type.Normal));
         System.out.println(l);
+        System.out.println(h1.isFull());
+        System.out.println(h2.isFull());
     }
 }

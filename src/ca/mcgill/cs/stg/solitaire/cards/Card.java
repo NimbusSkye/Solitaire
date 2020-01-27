@@ -55,7 +55,7 @@ public final class Card
 	private final Rank aRank;
 	private final Suit aSuit;
 	
-	private Card(Rank pRank, Suit pSuit )
+	Card(Rank pRank, Suit pSuit)
 	{
 		aRank = pRank;
 		aSuit = pSuit;
